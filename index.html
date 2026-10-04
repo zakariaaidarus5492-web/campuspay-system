@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#102d32" name="theme-color"/>
+  <title>
+   CampusPay &mdash; Student Payment &amp; Management System
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body class="login-page">
+  <main class="login-wrap">
+   <section class="login-art">
+    <div class="brand">
+     <span class="brand-mark">
+      C
+     </span>
+     <span>
+      CampusPay
+     </span>
+    </div>
+    <div class="art-copy">
+     <span class="eyebrow">
+      STUDENT PAYMENT &amp; MANAGEMENT
+     </span>
+     <h1>
+      Manage student accounts and payments in one place.
+     </h1>
+     <p>
+      Student records, payments, receipts and support in a simple local workspace.
+     </p>
+    </div>
+    <div class="art-foot">
+     Authorized accounts only
+    </div>
+   </section>
+   <section class="login-panel">
+    <div class="login-box">
+     <div class="mobile-brand brand">
+      <span class="brand-mark">
+       C
+      </span>
+      <span>
+       CampusPay
+      </span>
+     </div>
+     <span class="eyebrow">
+      WELCOME
+     </span>
+     <h2>
+      Sign in to your account
+     </h2>
+     <p class="muted">
+      Use the credentials provided for your account.
+     </p>
+     <form id="loginForm">
+      <label>
+       Account type
+       <select id="loginRole">
+        <option value="admin">
+         Administrator
+        </option>
+        <option value="student">
+         Student
+        </option>
+       </select>
+      </label>
+      <label>
+       Username
+       <input autocomplete="username" id="loginUsername" placeholder="Enter username" required=""/>
+      </label>
+      <label>
+       Password
+       <input autocomplete="current-password" id="loginPassword" placeholder="Enter password" required="" type="password"/>
+      </label>
+      <button class="button primary full" type="submit">
+       Sign in
+       <span>
+        &rarr;
+       </span>
+      </button>
+      <div class="form-error" id="loginError" role="alert">
+      </div>
+     </form>
+     <p class="security-note">
+      Account and payment data are stored in this browser. This frontend-only version does not provide server-side security.
+     </p>
+    </div>
+   </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase-config.js"></script>
+  <script src="js/storage.js">
+  </script>
+  <script src="js/audit.js">
+  </script>
+  <script src="js/students.js">
+  </script>
+  <script src="js/receipts.js">
+  </script>
+  <script src="js/payments.js">
+  </script>
+  <script src="js/complaints.js">
+  </script>
+  <script src="js/notifications.js">
+  </script>
+  <script src="js/auth.js">
+  </script>
+  <script src="js/app.js">
+  </script>
+ </body>
+</html>
+
